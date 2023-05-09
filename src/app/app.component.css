@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset para navegadores antiguos*/
+/*--- HTML5 display-role reset para navegadores antiguos---*/
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -82,29 +82,42 @@ h1 {
     margin-bottom: 10px;
 }
 
-.screen-image {
-    width: 100%;
-}
-
 .section-container {
     display: flex;
     flex-direction: column;
 }
 
-@media only screen and (min-width: 900px) {
-    .section-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin: auto;
-        max-width: 1000px;
-    }    
+.imglanding {    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
-    .section-main {
-        flex: 1 1 50%;
-    }
-    
-    .section-other {
-        flex: 1 1 50%;
-    }
+  .btnlanding {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: rgba(76, 175, 80, 1);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border: solid white 3px;
+    border-radius: 10%;
+  }
+ 
+  .subtitlebtn {
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
 }
+  
+  
+  
+  
+  
+  
+  
